@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+}
+
+header {
+    padding: 15px 50px 15px 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items:center; /*alinha os filhos no eixo vertical*/
+    justify-content: space-between; /*alinha os filhos no eixo horizontal*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.show {
+    display: none;
+}
+/*aplica estiulo para telas mobile*/
+@media (max-width: 600px){
+    .show {
+        display: block;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        background-color:darkred;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
